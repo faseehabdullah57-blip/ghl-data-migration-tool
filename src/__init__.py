@@ -1,0 +1,3 @@
+"""GoHighLevel Data Migration Tool package."""
+
+__version__ = "2.0.0"

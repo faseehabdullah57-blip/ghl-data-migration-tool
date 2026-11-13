@@ -1,0 +1,4 @@
+Deal_Name,Contact_Email,Contact_Phone,Stage_Name,Deal_Value,Status,Deal_Source,Assigned_To,Deal_Contract_Term,Expected_Close_Date,Legacy_Deal_ID
+Apex Digital Q1 Retainer Expansion,sophia.martinez@apexdigital.io,(415) 555-0142,Negotiation,"$24,500.00",open,ActiveCampaign,Jordan Blake,12 Months,2025-03-31,DEAL-AC-501
+NorthStar Enterprise Growth License,liam.oconnor@northstarventures.com,212-555-0198,Closed Won,12850.50,won,HubSpot,Elena Rostova,24 Months,2025-01-15,DEAL-HS-889
+Orphaned Legacy Deal,unknown.buyer@nonexistent-corp.io,(800) 555-9999,Discovery,5000.00,open,Infusionsoft,Marcus Sterling,6 Months,2025-06-01,DEAL-ORPHAN-404

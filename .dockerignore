@@ -1,0 +1,15 @@
+.venv
+venv
+env
+.git
+.gitignore
+.env
+__pycache__
+*.py[cod]
+*$py.class
+.pytest_cache
+.coverage
+htmlcov
+.vscode
+.idea
+data/output/*.csv

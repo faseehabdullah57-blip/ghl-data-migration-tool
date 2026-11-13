@@ -1,0 +1,73 @@
+{
+  "version": "2.0",
+  "description": "Schema mapping configuration from legacy CRM exports (ActiveCampaign / HubSpot / Infusionsoft) to GoHighLevel API v2.",
+  "settings": {
+    "default_country_code": "+1",
+    "require_email_or_phone": true,
+    "deduplicate_by": ["email", "phone"],
+    "merge_tags": true,
+    "default_tags": ["legacy-crm-import", "migrated-v2"],
+    "tag_delimiter": ",",
+    "auto_create_custom_fields": true
+  },
+  "standard_fields": {
+    "First_Name": "firstName",
+    "Last_Name": "lastName",
+    "Email_Address": "email",
+    "Phone_Number": "phone",
+    "Company_Name": "companyName",
+    "Website_URL": "website",
+    "Street_Address": "address1",
+    "City": "city",
+    "State": "state",
+    "Postal_Code": "postalCode",
+    "Country": "country",
+    "Lead_Source": "source",
+    "Legacy_Tags": "tags",
+    "DND_Status": "dnd"
+  },
+  "custom_fields": {
+    "Custom_Field_123": {
+      "ghl_key": "contact.custom_field_123",
+      "name": "Custom Field 123 (Legacy Campaign Ref)",
+      "data_type": "TEXT",
+      "placeholder": "e.g., AC-CAMP-2024-Q4",
+      "required": false
+    },
+    "Legacy_CRM_ID": {
+      "ghl_key": "contact.legacy_crm_id",
+      "name": "Legacy CRM Contact ID",
+      "data_type": "TEXT",
+      "placeholder": "Original CRM external ID",
+      "required": false
+    },
+    "Subscription_Tier": {
+      "ghl_key": "contact.subscription_tier",
+      "name": "Subscription Tier",
+      "data_type": "SINGLE_OPTIONS",
+      "options": ["Starter", "Growth", "Pro", "Enterprise"],
+      "required": false
+    },
+    "Lifetime_Value_USD": {
+      "ghl_key": "contact.lifetime_value_usd",
+      "name": "Lifetime Value (USD)",
+      "data_type": "MONETORY",
+      "placeholder": "0.00",
+      "required": false
+    },
+    "Onboarding_Date": {
+      "ghl_key": "contact.onboarding_date",
+      "name": "Client Onboarding Date",
+      "data_type": "DATE",
+      "placeholder": "YYYY-MM-DD",
+      "required": false
+    },
+    "Account_Manager": {
+      "ghl_key": "contact.account_manager",
+      "name": "Assigned Account Manager",
+      "data_type": "TEXT",
+      "placeholder": "Full Name",
+      "required": false
+    }
+  }
+}

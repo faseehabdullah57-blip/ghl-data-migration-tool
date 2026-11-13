@@ -1,0 +1,50 @@
+{
+  "version": "2.0",
+  "description": "Schema and pipeline mapping configuration for migrating legacy CRM deals into GoHighLevel Opportunities (API v2).",
+  "pipelineId": "pipe_agency_sales_001",
+  "default_status": "open",
+  "stage_mappings": {
+    "Discovery": "stage_discovery_001",
+    "Qualification": "stage_qualification_002",
+    "Proposal Sent": "stage_proposal_003",
+    "Negotiation": "stage_negotiation_004",
+    "Closed Won": "stage_closed_won_005",
+    "Closed Lost": "stage_closed_lost_006"
+  },
+  "standard_fields": {
+    "Deal_Name": "name",
+    "Contact_Email": "email",
+    "Contact_Phone": "phone",
+    "Stage_Name": "stage",
+    "Deal_Value": "monetaryValue",
+    "Status": "status",
+    "Deal_Source": "source",
+    "Assigned_To": "assignedTo"
+  },
+  "custom_fields": {
+    "Deal_Contract_Term": {
+      "ghl_key": "opportunity.deal_contract_term",
+      "name": "Deal Contract Term",
+      "data_type": "SINGLE_OPTIONS",
+      "options": ["Monthly", "6 Months", "12 Months", "24 Months"],
+      "model": "opportunity",
+      "required": false
+    },
+    "Expected_Close_Date": {
+      "ghl_key": "opportunity.expected_close_date",
+      "name": "Expected Close Date",
+      "data_type": "DATE",
+      "placeholder": "YYYY-MM-DD",
+      "model": "opportunity",
+      "required": false
+    },
+    "Legacy_Deal_ID": {
+      "ghl_key": "opportunity.legacy_deal_id",
+      "name": "Legacy CRM Deal ID",
+      "data_type": "TEXT",
+      "placeholder": "Original Deal ID",
+      "model": "opportunity",
+      "required": false
+    }
+  }
+}

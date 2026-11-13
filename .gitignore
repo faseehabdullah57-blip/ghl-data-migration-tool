@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables & secrets
+.env
+
+# IDE & OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Client Data Protection (PII & generated error reports)
+data/input/*.csv
+!data/input/sample_legacy_contacts.csv
+!data/input/sample_opportunities.csv
+!data/input/sample_notes.csv
+data/output/*.csv
